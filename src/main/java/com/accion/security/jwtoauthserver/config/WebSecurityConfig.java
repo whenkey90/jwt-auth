@@ -1,4 +1,4 @@
-package com.accion.security.jwtoauthserver;
+package com.accion.security.jwtoauthserver.config;
 
 import javax.servlet.http.HttpServletResponse;
 

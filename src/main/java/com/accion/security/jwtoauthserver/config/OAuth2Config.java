@@ -1,4 +1,4 @@
-package com.accion.security.jwtoauthserver;
+package com.accion.security.jwtoauthserver.config;
 
 import javax.sql.DataSource;
 
@@ -23,7 +23,8 @@ import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFacto
 public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
   
 	@Autowired
-	DataSource dataSource;
+    @Qualifier("dataSource")
+    DataSource dataSource;
 
     @Autowired
     @Qualifier("authenticationManagerBean")
